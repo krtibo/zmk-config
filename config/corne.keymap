@@ -24,6 +24,28 @@
         };
     };
 
+    macros {
+        ugla1: ugla1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 1>,
+                <&macro_tap>,
+                <&rgb_ug RGB_ON>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(213,100,50)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 1>,
+                <&macro_tap>,
+                <&rgb_ug RGB_OFF>;
+
+            label = "UGLA1";
+            wait-ms = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -38,7 +60,7 @@
 &kp ESCAPE  &kp Q        &kp W           &kp E           &kp R             &kp T        &kp Y      &kp U             &kp I           &kp O           &kp P                  &kp BSPC
 &kp TAB     &hm LCTRL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F  &kp G        &kp H      &hm LEFT_SHIFT J  &hm LEFT_GUI K  &hm LEFT_ALT L  &hm LEFT_CONTROL SEMI  &kp SQT
 &kp LSHFT   &kp Z        &kp X           &kp C           &kp V             &kp B        &kp N      &kp M             &kp COMMA       &kp DOT         &kp FSLH               &bl BL_TOG
-                                         &kp LGUI        &mo 1             &kp ENTER    &kp SPACE  &mo 2             &kp RALT
+                                         &kp LGUI        &ugla1            &kp ENTER    &kp SPACE  &mo 2             &kp RALT
             >;
         };
 
