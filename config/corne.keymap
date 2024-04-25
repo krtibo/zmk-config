@@ -34,12 +34,12 @@
                 <&macro_tap>,
                 <&rgb_ug RGB_COLOR_HSB(213,100,50)>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON>,
+                <&rgb_ug RGB_TOG>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 1>,
                 <&macro_tap>,
-                <&rgb_ug RGB_OFF>;
+                <&rgb_ug RGB_TOG>;
 
             label = "UGLA1";
             wait-ms = <0>;
@@ -54,12 +54,12 @@
                 <&macro_tap>,
                 <&rgb_ug RGB_COLOR_HSB(44,100,50)>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON>,
+                <&rgb_ug RGB_TOG>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 2>,
                 <&macro_tap>,
-                <&rgb_ug RGB_OFF>;
+                <&rgb_ug RGB_TOG>;
 
             label = "UGLA2";
             wait-ms = <0>;
